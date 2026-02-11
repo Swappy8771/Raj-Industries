@@ -43,40 +43,39 @@ const ContactOptions: React.FC = () => {
           </p>
         </div>
 
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {contactOptions.map((item, index) => (
-            <a
-              key={index}
-              href={item.link || "#"}
-              className="group bg-white rounded-xl shadow-sm border border-gray-100 
-                         p-6 flex flex-col items-start gap-4 
-                         hover:shadow-lg transition-all duration-300"
-            >
-              {/* Icon Box */}
-              <div className="w-12 h-12 flex items-center justify-center 
-                              bg-gradient-to-br from-pink-600 to-red-600 
-                              text-white rounded-lg 
-                              group-hover:scale-105 transition-transform">
-                {item.icon}
+        {/* Single Contact Card */}
+        <div className="bg-white rounded-2xl border border-black/5 float-card card-shadow px-6 py-8">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            {contactOptions.map((item, index) => (
+              <div key={index} className="flex items-center gap-4">
+                <div className="w-11 h-11 flex items-center justify-center icon-box rounded-lg">
+                  {item.icon}
+                </div>
+
+                <div className="min-w-0">
+                  <p className="text-xs uppercase tracking-widest text-gray-500">
+                    {item.title}
+                  </p>
+                  {item.link ? (
+                    <a
+                      href={item.link}
+                      className="text-gray-900 font-semibold hover:text-[var(--primary-color)] transition-colors"
+                    >
+                      {item.detail}
+                    </a>
+                  ) : (
+                    <p className="text-gray-900 font-semibold">
+                      {item.detail}
+                    </p>
+                  )}
+                </div>
+
+                {index < contactOptions.length - 1 && (
+                  <div className="hidden lg:block text-gray-300 px-4">|</div>
+                )}
               </div>
-
-              {/* Text */}
-              <h3 className="text-lg font-semibold text-gray-800">
-                {item.title}
-              </h3>
-
-              <p className="text-gray-600 text-sm">
-                {item.detail}
-              </p>
-
-              {/* Small underline hover effect */}
-              <span className="mt-2 text-sm font-semibold text-pink-600 
-                               group-hover:underline">
-                {item.link ? "Contact Now →" : "Available Hours"}
-              </span>
-            </a>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
