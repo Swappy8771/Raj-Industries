@@ -6,10 +6,10 @@ import MapSection from '../components/contact/MapSection'
 const Contact = () => {
   return (
     <>
-      <ContactOptions />
-      <ContactForm />
-      <ContactHero />
-      <MapSection />
+      <ContactHero/>
+      <ContactOptions/>
+      <ContactForm/>
+      <MapSection/>
     </>
   )
 }
