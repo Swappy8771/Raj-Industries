@@ -74,7 +74,6 @@ const ContactForm: React.FC = () => {
                 <option>EV</option>
                 <option>Industrial</option>
                 <option>Aerospace</option>
-                <option>Medical</option>
                 <option>Other</option>
               </select>
             </div>

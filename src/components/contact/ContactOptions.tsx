@@ -5,19 +5,19 @@ const contactOptions = [
   {
     icon: <Mail className="w-6 h-6" />,
     title: "Email Us",
-    detail: "sales@wewire.com",
-    link: "mailto:sales@wewire.com",
+    detail: "info@rajindustries.com",
+    link: "mailto:info@rajindustries.com",
   },
   {
     icon: <Phone className="w-6 h-6" />,
     title: "Call Us",
-    detail: "+91 9XXXXXXXXX",
-    link: "tel:+919XXXXXXXXX",
+    detail: "+91 XXX XXX XXXX",
+    link: "tel:+91XXXXXXXXXX",
   },
   {
     icon: <MapPin className="w-6 h-6" />,
     title: "Our Location",
-    detail: "Wuppertal, Germany",
+    detail: "Pune, Maharashtra, India",
     link: "#map",
   },
   {

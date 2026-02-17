@@ -52,7 +52,6 @@ const Footer = () => {
               "Automotive Harnesses",
               "Industrial Solutions",
               "Custom Assemblies",
-              "High-Voltage Systems",
             ].map((item) => (
               <li
                 key={item}

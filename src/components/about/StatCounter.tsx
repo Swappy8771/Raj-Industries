@@ -10,7 +10,7 @@ interface StatCard {
 const stats: StatCard[] = [
   {
     label: "Years of Excellence",
-    value: 23,
+    value: new Date().getFullYear() - 2001,
     suffix: "+",
     image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&q=80",
   },

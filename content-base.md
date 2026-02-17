@@ -7,8 +7,6 @@
 * Location:
   * Pune, Maharashtra, India (map section)
   * Industrial Area, Phase 2, Manufacturing Hub, India (footer)
-  * Wuppertal, Germany (contact options section)
-  * Location data is inconsistent across site sections
 * Core Business: Design, engineering, prototyping, manufacturing, and testing of wire harness systems and cable assemblies
 
 # Company Overview
